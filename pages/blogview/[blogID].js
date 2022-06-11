@@ -27,23 +27,23 @@ const Post = () => {
 
   return (
     <>
-    <div className="blogdiv">
+    <div className="blogdiv" suppressHydrationWarning>
     <h2 className="blog-title">{blog.title}</h2>
       <img className="blogimage" src={blog.urlToImage}/>
-      <div className="discription">
-      <b>Description :</b> {blog.description}
+      <div className="discription" suppressHydrationWarning>
+      <b>Description: </b> {blog.description}
       </div>
-      <div className="blogcontent">
-      <b>Content :</b>{blog.content}
+      <div className="blogcontent" suppressHydrationWarning>
+      <b>Content: </b>{blog.content}
       </div>
-      <div className="publishedat">
-        <b>Published at :</b>{blog.publishedAt}
+      <div className="publishedat" suppressHydrationWarning>
+        <b>Published at: </b>{blog.publishedAt}
       </div>
-      <div className="author">
-        <b>author :</b>{blog.author}
+      <div className="author" suppressHydrationWarning>
+        <b>Author: </b>{blog.author}
       </div>
-      <div className="blogrecomendation">
-      <b>Link to the original source :</b>
+      <div className="blogrecomendation" suppressHydrationWarning>
+      <b>Link to the original source: </b>
       <a href={blog.url} style={{"color":"black", "backgroundColor":"white","border":"2px solid black", "margin":"5px","border-radius": "30px"}}>Original source</a>
       </div>
     </div>

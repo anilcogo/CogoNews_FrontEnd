@@ -34,9 +34,10 @@ export default function Home() {
 
 	return (
 	<>
+
   <Navbar/>
   <Searchbox searchValue={searchValue} setSearchValue={setSearchValue}/>
-  <div className="card-outerdiv">
+  <div className="card-outerdiv" suppressHydrationWarning>
   <Bloglist blogs={blogs}/>
   </div>
   
