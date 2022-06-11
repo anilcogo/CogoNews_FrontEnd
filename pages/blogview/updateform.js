@@ -43,7 +43,7 @@ const form = () => {
 
       var config = {
         method: 'post',
-        url: 'http://localhost:3000/createArticle',
+        url: 'http://localhost:3000/updateArticle/{id}',
         headers: {
           'Content-Type': 'application/json'
         },
@@ -84,7 +84,7 @@ const form = () => {
 
       <div className="contact-box" suppressHydrationWarning>
 
-        <h1 className="formh1">Details of Article</h1>
+        <h1 className="formh1">Update Article</h1>
 
         <form onSubmit={handleSubmit}>
 

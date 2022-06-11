@@ -28,6 +28,7 @@ const Post = () => {
   return (
     <>
     <div className="blogdiv" suppressHydrationWarning>
+    <Link href={"../"}><a className="inner-link" style={{"color":"black", "backgroundColor":"#cfd8dc","border":"2px solid lightgray","margin":"5px","border-radius": "30px"}}>Back</a></Link>
     <h2 className="blog-title">{blog.title}</h2>
       <img className="blogimage" src={blog.urlToImage}/>
       <div className="discription" suppressHydrationWarning>
